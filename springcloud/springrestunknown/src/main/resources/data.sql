@@ -1,0 +1,1 @@
+insert into student(studentId,studentName) values(3,"kuchi");

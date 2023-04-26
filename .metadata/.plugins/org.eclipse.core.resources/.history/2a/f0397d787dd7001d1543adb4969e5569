@@ -1,0 +1,11 @@
+package com.springboot.section;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface sectionrepositry extends CrudRepository<student, Integer> {
+	
+	
+	
+	
+
+}

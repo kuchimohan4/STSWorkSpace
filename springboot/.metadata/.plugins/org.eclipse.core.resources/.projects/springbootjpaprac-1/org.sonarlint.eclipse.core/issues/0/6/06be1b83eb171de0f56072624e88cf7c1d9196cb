@@ -1,0 +1,9 @@
+
+x	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(©ƒˆ­HÑRMINORZ
+CODE_SMELL
+b
+java:S1135A"2Complete the task associated to this TODO comment.(ƒŠ® úÿÿÿÿHÒRINFOZ
+CODE_SMELL
+v
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Þ÷Ñ¸ÿÿÿÿÿHÓRMINORZ
+CODE_SMELL

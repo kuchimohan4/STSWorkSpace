@@ -1,0 +1,42 @@
+package com.springboot.section;
+
+import java.util.ArrayList;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ch.qos.logback.core.filter.Filter;
+
+@Service
+public class studentservice {
+	@Autowired
+	private sectionrepositry studentrepositry;
+	
+	
+	public List<section> getStudents(){
+		List<section> lStudents=new ArrayList<>();
+		studentrepositry.findAll().forEach(lStudents::add);
+		return lStudents;
+		
+	}
+	public section getStudent(int id) {
+		//same as using for loop and checking it lamda
+//		return stuList.stream().filter(t -> (t.getId()==id)).findFirst().get();
+		return studentrepositry.findById(id).get();
+		
+	}
+	public void addstudent(section student) {
+		// TODO Auto-generated method stub
+		studentrepositry.save(student);
+	}
+	public void updatestudent(int id,section student) {
+		studentrepositry.save(student);
+	}
+	
+
+	
+	
+}

@@ -1,0 +1,13 @@
+package com.springboot.student;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface studentrepositry extends CrudRepository<student, Integer> {
+	
+	
+	public student findByName(String name);
+	public student findByDept(String name);
+	public student findBySectionId(int id);
+	
+
+}

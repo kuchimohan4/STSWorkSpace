@@ -1,0 +1,22 @@
+
+}	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ìÐ‡ËþÿÿÿÿH¶RMINORZ
+CODE_SMELL
+t
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(’¨¦òH·RMINORZ
+CODE_SMELL
+y
+java:S4488!"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(›€žÑüÿÿÿÿH¹RMINORZ
+CODE_SMELL
+r
+java:S4684'"@Replace this persistent entity with a simple POJO or DTO object.(ßÞ—ÿH»RCRITICALZVULNERABILITY
+y
+java:S4488&"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(ëû¨ÏÿÿÿÿÿH¼RMINORZ
+CODE_SMELL
+r
+java:S4684/"@Replace this persistent entity with a simple POJO or DTO object.(ûŠŠ’H¾RCRITICALZVULNERABILITY
+v
+java:S4488."JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ü·ìÑH¿RMINORZ
+CODE_SMELL
+^
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜ÉüÿÿÿÿHÁRMINORZ
+CODE_SMELL

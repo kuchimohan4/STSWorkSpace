@@ -1,0 +1,53 @@
+package com.springboot.section;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@Service
+@RestController
+//@RequestMapping("/api") dont use this not working
+public class sectioncontroller {
+	
+	@Autowired
+	private sectionservice sectionservice;
+	
+	
+	@RequestMapping(value = "/sections",method = RequestMethod.GET)
+	public List<section> secList(){
+		
+		return sectionservice.getStudents();
+							
+		
+	}
+	
+	@RequestMapping(value = "/section/{id}",method = RequestMethod.GET)
+	public section getsection(@PathVariable("id") int id) {
+		return sectionservice.getSection(id);
+		
+	}
+	@RequestMapping(value = "/section/{id}",method = RequestMethod.PUT)
+	public boolean updatesection(@PathVariable("id") int id,@RequestBody section student) {
+		 sectionservice.updateSection(id, student);
+		 return true;
+		
+	}
+	
+	
+	@RequestMapping(value="/sections",method =RequestMethod.POST)
+	public boolean addstudent(@RequestBody section student) {
+		
+		sectionservice.addSection(student);
+		
+		return true;
+	}
+	
+
+}
